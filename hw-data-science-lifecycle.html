@@ -210,15 +210,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li><p>Render the document and fix any errors</p></li>
 <li><p>Look at the plot that you created and describe what the <code>mutate()</code> function achieved in the previous task</p></li>
 </ol>
-<!--# Remove this comment and write your text here -->
-<ol start="5" type="1">
-<li>Describe in your own words what the ‘color’ argument inside the <code>aes()</code> does</li>
-</ol>
-<!--# Remove this comment and write your text here -->
+<p>The first mutate divided waste per year in tons by corresponding populations and changed tons to kg, so ‘capita_kg_year’ shows how much kg of waste each person is generating in a year. The second mutate reorganized the data from continents into income classes.</p>
+<p>Describe in your own words what the ‘color’ argument inside the <code>aes()</code> does</p>
+<p>‘color’ made the different income levels their own color, making the plots much more visually appealing.</p>
 <ol start="6" type="1">
 <li>Describe in your own words what the <code>labs()</code> function does</li>
 </ol>
-<!--# Remove this comment and write your text here -->
+<p>‘labs’ customizes the graph information to fit the data. In this context it creates a proportional y-axis scale and the legend on the side.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> global_waste_data_kg_year,</span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>       <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> income_id, </span>

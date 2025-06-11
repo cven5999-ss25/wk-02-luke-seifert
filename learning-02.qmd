@@ -11,15 +11,15 @@ Learning reflections are part of your weekly homework and have a weight of 20% o
 
 # Lecture
 
-<!--# Add your reflections on the lecture of this week here -->
+The lecture was a good intro to coding, I greatly appreciate not putting too much information or assignment on us the first week. My internet was a bit slow so I was having some connection issues, hopefully those don't persist. Hoping we don't take the whole lecture period every time so we can save some time for questions at the end.
 
 # Homework Assignment
 
-<!--# Add your reflections on the homework programming assignment here -->
+I super appreciate the homework having very explicit instructions. I hope they stay that thorough as we begin to code for ourselves. I am glad the instructions for submitting will be attached to every assignment.
 
 # Readings
 
-<!--# Add your reflections on the required readings here -->
+The reading was rather long but it felt relevent. I liked that it prefaced why each thing was included and that this is all very relevant material, rather than covering a very broad spectrum that we will likely forget most of when we are finished with the class.
 
 # Submit learning reflections
 
