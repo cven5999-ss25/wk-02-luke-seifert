@@ -16,9 +16,7 @@ This homework assignment is designed as a guided walkthrough of the data science
 
 As you work through each task, carefully read the step-by-step instructions and identify the corresponding elements in the provided code. This format will help you understand how I will describe coding tasks in future exercises, so pay attention to how each step connects to specific parts of the code.
 
-Your main objectives are to:
-- Run each code chunk and ensure it executes without errors
-- Verify that each step produces the expected results  
+Your main objectives are to: - Run each code chunk and ensure it executes without errors - Verify that each step produces the expected results\
 - Understand the connection between the task descriptions and the code implementation
 
 # Task 0: Load R packages
@@ -49,7 +47,7 @@ library(here)
 **Note:** You will learn more about the use of the `here()` function when we look at data import in more detail.
 
 ```{r}
-global_waste_data <- read_csv(here("wk-02/data/country_level_data_0.csv"))
+global_waste_data <- read_csv(here("data/country_level_data_0.csv"))
 ```
 
 # Task 2: Data tidying (and some transformation)
@@ -94,7 +92,7 @@ global_waste_data_small <- global_waste_data |>
 
 4.  Describe in your own words what the `mutate()` function does in this code-chunk
 
-<!--# Remove this comment and write your text here -->
+The mutate function is first used to create the variable "capita_kg_year." Then it is used to change "income_id" to a new version of itself.
 
 ```{r}
 global_waste_data_kg_year <- global_waste_data_small |> 
@@ -122,15 +120,15 @@ global_waste_data_kg_year <- global_waste_data_small |>
 
 4.  Look at the plot that you created and describe what the `mutate()` function achieved in the previous task
 
-<!--# Remove this comment and write your text here -->
+The first mutate divided waste per year in tons by corresponding populations and changed tons to kg, so 'capita_kg_year' shows how much kg of waste each person is generating in a year. The second mutate reorganized the data from continents into income classes.
 
-5.  Describe in your own words what the 'color' argument inside the `aes()` does
+Describe in your own words what the 'color' argument inside the `aes()` does
 
-<!--# Remove this comment and write your text here -->
+'color' made the different income levels their own color, making the plots much more visually appealing.
 
 6.  Describe in your own words what the `labs()` function does
 
-<!--# Remove this comment and write your text here -->
+'labs' customizes the graph information to fit the data. In this context it creates a proportional y-axis scale and the legend on the side.
 
 ```{r}
 ggplot(data = global_waste_data_kg_year,
